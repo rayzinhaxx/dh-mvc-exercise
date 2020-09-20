@@ -9,7 +9,7 @@ public class Produto {
     private int qtd_estoque;
     
     public Produto () {
-    	this.id_produto += 1;
+    	Produto.id_produto += 1;
     }
 	public int getId_produto() {
 		return id_produto;

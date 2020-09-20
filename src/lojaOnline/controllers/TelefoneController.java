@@ -28,14 +28,11 @@ public class TelefoneController {
 	public void setTelefoneNumero(String numero) {
 		model.setNumero(numero);
 	}
-	public Cliente getTelefoneCliente() {
-		return model.getCliente();
-	}
-	public void setTelefoneCliente(Cliente cliente) {
-		model.setCliente(cliente);
-	}
 	public int getTelefoneFk_cliente() {
 		return model.getFk_cliente();
+	}
+	public void setTelefoneFk_cliente(int fk_cliente) {
+		model.setFk_cliente(fk_cliente);
 	}
 	public void updateView() {
 		view.printTelefoneDetails(model.getId_telefone(), model.getDdd(), model.getNumero(), model.getFk_cliente());

@@ -8,13 +8,11 @@ public class Pedido {
     private String status_pedido;
     private double valor_total;
     private String nota_fiscal;
-	private Cliente cliente;
-	private int fk_cliente = cliente.getId_cliente();
-	private Produto produto;
-	private int fk_produto = produto.getId_produto();
+	private int fk_cliente;
+	private int fk_produto;
 	
 	public Pedido() {
-		this.id_pedido += 1;
+		Pedido.id_pedido += 1;
 	}
 	public int getId_pedido() {
 		return id_pedido;
@@ -46,7 +44,13 @@ public class Pedido {
 	public int getFk_cliente() {
 		return fk_cliente;
 	}
+	public void setFk_cliente(int fk_cliente) {
+		this.fk_cliente = fk_cliente;
+	}
 	public int getFk_produto() {
 		return fk_produto;
+	}
+	public void setFk_produto(int fk_produto) {
+		this.fk_produto = fk_produto;
 	}
 }

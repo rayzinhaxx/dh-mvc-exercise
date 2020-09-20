@@ -7,18 +7,12 @@ public class Endereco {
 	private String bairro;
 	private String cep;
 	private String logradouro;
-	private Cliente cliente;
-	private int fk_cliente = cliente.getId_cliente();
+	private int fk_cliente;
 	
 	public Endereco() {
-		this.id_endereco += 1;
+		Endereco.id_endereco += 1;
 	}
-	public Cliente getCliente() {
-		return this.cliente;
-	}
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
+
 	public int getId_endereco() {
 		return id_endereco;
 	}
@@ -54,6 +48,9 @@ public class Endereco {
 	}
 	public int getFk_cliente() {
 		return fk_cliente;
+	}
+	public void setFk_cliente(int fk_cliente) {
+		this.fk_cliente = fk_cliente;
 	}
 	
 }

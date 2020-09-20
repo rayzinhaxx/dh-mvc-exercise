@@ -44,8 +44,14 @@ public class PedidoController {
 	public int getPedidoFk_cliente() {
 		return  model.getFk_cliente();
 	}
+	public void setPedidoFk_cliente(int fk_cliente) {
+		model.setFk_cliente(fk_cliente);
+	}
 	public int getPedidoFk_produto() {
 		return  model.getFk_produto();
+	}
+	public void setPedidoFk_produto(int fk_produto) {
+		model.setFk_produto(fk_produto);
 	}
 	public void updateView() {
 		view.printPedidoDetails(model.getId_pedido(), model.getData_emissao(), model.getStatus_pedido(), model.getValor_total(), model.getNota_fiscal(), model.getFk_cliente(), model.getFk_produto());

@@ -2,7 +2,7 @@ package lojaOnline.views;
 
 public class EnderecoView {
 	public void printEnderecoDetails(int clienteId_endereco, String clienteEstado, String clienteCidade, String clienteBairro, String clienteCep, String clienteLogradouro, int clienteId_cliente) {
-		System.out.println("Endereço: ");
+		System.out.println("EndereÃ§o: ");
 		System.out.println("Id_Cliente: " + clienteId_endereco);
 		System.out.println("Estado: " + clienteEstado);
 		System.out.println("Cidade" + clienteCidade);

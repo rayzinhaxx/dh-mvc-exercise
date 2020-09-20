@@ -5,7 +5,7 @@ public class TelefoneView {
 		System.out.println("Telefone: ");
 		System.out.println("Id_telefone: " + telefoneId_telefone);
 		System.out.println("DDD: " + telefoneDdd);
-		System.out.println("Número: " + telefoneNumero);
+		System.out.println("NÃºmero: " + telefoneNumero);
 		System.out.println("Fk_cliente: " + telefoneFk_cliente);
 	}
 }

@@ -11,7 +11,7 @@ public class Cliente {
 	private LocalDate nascimento;
 	
 	public Cliente() {
-		this.id_cliente += 1;
+		Cliente.id_cliente += 1;
 	}
 	
 	public int getId_cliente() {

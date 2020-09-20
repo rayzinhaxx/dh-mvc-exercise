@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class ClienteView {
 	public void printClienteDetails(int clienteId_cliente, String clienteNome, String clienteCpf, String clienteRg, String clienteEmail, LocalDate clienteNascimento) {
+		System.out.println("Cliente: ");
 		System.out.println("Id_Cliente: " + clienteId_cliente);
 		System.out.println("Nome: " + clienteNome);
 		System.out.println("CPF: " + clienteCpf);

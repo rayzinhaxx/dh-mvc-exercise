@@ -1,6 +1,5 @@
 package lojaOnline.controllers;
 
-import lojaOnline.models.Cliente;
 import lojaOnline.models.Endereco;
 import lojaOnline.views.EnderecoView;
 
@@ -11,13 +10,6 @@ public class EnderecoController {
 	public EnderecoController(Endereco model, EnderecoView view) {
 		this.model = model;
 		this.view = view;
-	}
-	
-	public Cliente getClienteCliente() {
-		return model.getCliente();
-	}
-	public void setEnderecoCliente(Cliente cliente) {
-		model.setCliente(cliente);
 	}
 	
 	public int getEnderecoId_endereco() {
@@ -57,6 +49,10 @@ public class EnderecoController {
 	public int getEnderecoFk_cliente() {
 		return model.getFk_cliente();
 	}
+	public void setEnderecoFk_cliente(int fk_cliente) {
+		model.setFk_cliente(fk_cliente);
+	}
+
 	public void updateView() {
 		view.printEnderecoDetails(model.getId_endereco(), model.getEstado(), model.getCidade(), model.getBairro(), model.getCep(), model.getLogradouro(), model.getFk_cliente());
 	}

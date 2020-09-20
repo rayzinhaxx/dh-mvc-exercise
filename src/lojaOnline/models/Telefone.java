@@ -4,11 +4,10 @@ public class Telefone {
 	private static int id_telefone;
 	private String ddd;
 	private String numero;
-	private Cliente cliente;
-	private int fk_cliente = cliente.getId_cliente();
+	private int fk_cliente;
 	
 	public Telefone() {
-		this.id_telefone += 1;
+		Telefone.id_telefone += 1;
 	}
 	public int getId_telefone() {
 		return id_telefone;
@@ -25,13 +24,10 @@ public class Telefone {
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
-	public Cliente getCliente() {
-		return cliente;
-	}
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
 	public int getFk_cliente() {
 		return fk_cliente;
+	}
+	public void setFk_cliente(int fk_cliente) {
+		this.fk_cliente = fk_cliente;
 	}
 }

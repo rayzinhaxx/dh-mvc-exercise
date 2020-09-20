@@ -2,10 +2,8 @@ package lojaOnline.models;
 
 public class Pedido_Produto {
 	private int quantidade_produto;
-	private Pedido pedido;
-	private int fk_pedido = pedido.getId_pedido();
-	private Produto produto;
-	private int fk_produto = produto.getId_produto();
+	private int fk_pedido;
+	private int fk_produto;
 	
 	public int getQuantidade_produto() {
 		return quantidade_produto;
@@ -16,7 +14,13 @@ public class Pedido_Produto {
 	public int getFk_pedido() {
 		return fk_pedido;
 	}
+	public void setFk_pedido(int fk_pedido) {
+		this.fk_pedido = fk_pedido;
+	}
 	public int getFk_produto() {
 		return fk_produto;
+	}
+	public void setFk_produto(int fk_produto) {
+		this.fk_produto = fk_produto;
 	}
 }

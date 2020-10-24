@@ -1,6 +1,5 @@
 package lojaOnline.controllers;
 
-import lojaOnline.models.Cliente;
 import lojaOnline.models.Telefone;
 import lojaOnline.views.TelefoneView;
 
